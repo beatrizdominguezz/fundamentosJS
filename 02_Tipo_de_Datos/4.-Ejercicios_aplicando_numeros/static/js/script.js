@@ -19,9 +19,9 @@ function edadProyectada(){
 // Muestra el resultado
 
 function compraDescuentos(){
-    let producto = 25.000
-    alert
-
+    let producto = 25.000;
+    let descuento = 20;
+    alert(`${producto * 0.80}`);
 };
 
 // 🔹 Ejercicio 3: Promedio de notas
@@ -30,7 +30,13 @@ function compraDescuentos(){
 // Redondea el resultado usando Math.round()
 
 function promedioNotas(){
-
+    let nota1 = 6.5;
+    let nota2 = 5.8;
+    let nota3 = 6.2;
+    let promedio = (nota1 + nota2 + nota3) / 3;
+    alert(`Se tiene 3 notas ${nota1}, ${nota2} y ${nota3}
+        \nEl promedio de estas es: ${promedio}
+        \nY redondeado seria ${Math.round(promedio)}`)
 };
 
 // 🔹 Ejercicio 4: Temperatura
@@ -40,7 +46,14 @@ function promedioNotas(){
 // Muestra el resultado final
 
 function calcularTemperatura(){
-
+    let temperatura = 15;
+    let aumento = temperatura + 3;
+    let disminuida = temperatura - 5;
+    let resultado = temperatura + 3 - 5;
+    alert(`La temperatura actual es: ${temperatura}
+        \nLa temperatura aumentada es: ${aumento}
+        \nLa temperatura disminuida es: ${disminuida}
+        \nEl resultado de la temperatura es: ${resultado}`)
 };
 
 // 🔹 Ejercicio 5: Sueldo semanal
@@ -50,7 +63,13 @@ function calcularTemperatura(){
 // Muestra el nuevo sueldo
 
 function calcularSueldo(){
-
+    let valorHora = 8.000;
+    let cantidadHora = 45;
+    let sueldo = valorHora * cantidadHora
+    cantidadHora += 5;
+    let sueldoNuevo = valorHora * cantidadHora;
+    alert(`sueldo actual: $${sueldo}}
+        \nSueldo nuevo con incremento: $${sueldoNuevo}`)
 };
 
 // 🔹 Ejercicio 6: División y resto
@@ -59,10 +78,26 @@ function calcularSueldo(){
 // Calcula el módulo (%)
 // Explica el resultado en consola
 
+function divisionResto(){
+    let numero1 = 6;
+    let numero2 = 7;
+    alert(`La división es: ${numero1 / numero2}
+        \nY el resto es: ${numero1 % numero2}`)
+        alert("El resto de la división se obtiene con el símbolo %")
+}
+
 // 🔹 Ejercicio 7: Comparación de números
 // Declara dos números:
 // Muestra si el primero es mayor que el segundo
 // Verifica si uno de ellos es igual a 10
+
+function comparacionNumerica(){
+    let num1 = 6
+    let num2 = 7
+    alert (`Num1 es mayor que Num2: ${num1 < num2}
+        \n¿El num1 es igual a 10?: ${num1 === 10}
+    `)
+}
 
 // 🔹 Ejercicio 8: Notación científica aplicada
 // Declara:
@@ -70,14 +105,38 @@ function calcularSueldo(){
 // Divide esa población en 4 grupos
 // Muestra el resultado
 
+function calcularPoblacion(){
+    let poblacion = 1e6
+    alert(`La población es de ${poblacion}
+        \nSe dividirán en grupos de 4
+        \nEl resultado es de ${poblacion / 4} en 4 grupos`)
+}
+
 // 🔹 Ejercicio 9: Potencia y cálculo combinado
 // Calcula:
 // 3 elevado a 4
 // Luego multiplícalo por 2
 // Resta 10 al resultado final
 
+function calcularPotencia(){
+    let NUM1 = 3;
+    let NUM2 = 4;
+    let Potencia = NUM1 ** NUM2;
+    let multi = Potencia * 2;
+    alert(`El resultado de 3 elevado a 4 es: ${Potencia}
+        \nResultado anterior por 2 es: ${Potencia * 2}
+        \nEl resultado final menos 10 es: {multi - 10}`)
+}
+
 // 🔹 Ejercicio 10: Dado aleatorio 🎲
 // Simula el lanzamiento de un dado:
 // Genera un número entre 1 y 6
 // Muestra el resultado
 // Indica si el número es mayor o igual a 4 (gana) o menor (pierde)
+
+function lanzarDados(){
+    let aleatorio = Math.random();
+    let dado = Math.floor(Math.random() * 6) + 1;
+    alert(`Tirar Dados: ¡${dado}!
+        \n¿Es mayor que 4? : ${dado >= 4}`);
+}
