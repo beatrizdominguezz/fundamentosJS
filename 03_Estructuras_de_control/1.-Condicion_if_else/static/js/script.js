@@ -19,7 +19,7 @@ if (condición) {
 //Ejemplo 1: (numérico) -- IF
 let edad = 18;
 
-if (edad <= 17) { //Condición Si
+if (edad >= 17) { //Condición Si
     console.log("Eres mayor de edad");
 }
 
